@@ -1,0 +1,10 @@
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+header {
+  background: url("../assets/hero.jpg") center/cover no-repeat;
+}
+h2 {
+  border-bottom: 2px solid #e87722; /* UT orange accent */
+  padding-bottom: 0.5rem;
+}
