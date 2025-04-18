@@ -225,3 +225,40 @@ body {
   border-top: 1px solid #444;
   font-size: 0.9rem;
 }
+
+/* Officers Section */
+.officers h2 {
+  text-align: center;
+  color: var(--orange);
+  margin-bottom: 2rem;
+}
+
+.officers-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; /* even spacing between cards */
+  gap: 2rem; /* space between rows & columns */
+}
+
+.officer-card {
+  text-align: center;
+}
+
+.officer-card img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.officer-card h3 {
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+}
+
+.officer-card p {
+  color: var(--text);
+  font-size: 0.9rem;
+}
