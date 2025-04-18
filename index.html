@@ -2,91 +2,122 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>UT Triathlon & Cycling Club</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.4.0/dist/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap"
       rel="stylesheet"
     />
-    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="assets/logo.png" height="30" alt="Logo" />
-          UT Triathlon Club
+    <header class="site-header">
+      <nav class="navbar container">
+        <a href="#hero" class="logo">
+          <img src="assets/logo.png" alt="UT Triathlon Club" />
         </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#nav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="nav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="events.html">Events</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="join.html">Join</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Hero -->
-    <header class="bg-primary text-white text-center py-5">
-      <div class="container">
-        <h1 class="display-5">Ride. Swim. Run. Repeat.</h1>
-        <p class="lead">
-          Official site of the UT Austin Triathlon & Cycling Club
-        </p>
-        <a href="join.html" class="btn btn-light btn-lg">Sign Up for Events</a>
-      </div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#join">Join</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <!-- Quick Links -->
-    <section class="container py-5">
-      <div class="row g-4">
-        <div class="col-md-4 text-center">
-          <h3>About Us</h3>
-          <p>Who we are & what we do</p>
-          <a href="about.html" class="btn btn-outline-primary">Learn More</a>
+    <!-- Hero -->
+    <section id="hero" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content container">
+        <h1>Ride. Swim. Run.<br />Repeat.</h1>
+        <p>Join UT Austin’s Triathlon & Cycling club!</p>
+        <a href="#join" class="btn-primary">Get Started</a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section about container">
+      <div class="about-text">
+        <h2>About Us</h2>
+        <p>
+          We’re a student‑run club welcoming athletes of all levels—from
+          first‑timers to age‑group competitors. Our mission is to train
+          together, race together, and build a supportive UT Longhorn community.
+        </p>
+        <ul>
+          <li>Weekly group rides, swims & runs</li>
+          <li>Skills clinics and coaching</li>
+          <li>Social events & gear swaps</li>
+        </ul>
+      </div>
+      <div class="about-image">
+        <img src="assets/about.png" alt="Club Activity" />
+      </div>
+    </section>
+
+    <!-- Events -->
+    <section id="events" class="section events container">
+      <h2>Upcoming Events</h2>
+      <div class="cards">
+        <div class="card">
+          <div class="card-date">Apr 30, 2025</div>
+          <h3>Hill‑Climb Ride</h3>
+          <p>Challenge Mount Bonnell with fellow Longhorn cyclists.</p>
         </div>
-        <div class="col-md-4 text-center">
-          <h3>Events</h3>
-          <p>Upcoming rides & tri clinics</p>
-          <a href="events.html" class="btn btn-outline-primary">See Events</a>
+        <div class="card">
+          <div class="card-date">May 10, 2025</div>
+          <h3>Beginner Triathlon Clinic</h3>
+          <p>Learn swim, bike, run transitions at the Rec Center.</p>
         </div>
-        <div class="col-md-4 text-center">
-          <h3>Join</h3>
-          <p>Sign up for our next event</p>
-          <a href="join.html" class="btn btn-outline-primary">Register Now</a>
+        <div class="card">
+          <div class="card-date">May 22, 2025</div>
+          <h3>Team Time Trial</h3>
+          <p>Race against the clock on Lady Bird Lake loop.</p>
+        </div>
+        <div class="card">
+          <div class="card-date">Jun 5, 2025</div>
+          <h3>Fredericksburg Loop Ride</h3>
+          <p>All‑levels road ride through the Texas Hill Country.</p>
         </div>
       </div>
     </section>
 
-    <!-- Contact -->
-    <footer id="contact" class="bg-light text-center py-4">
-      <div class="container">
-        <p>
-          Email: <a href="mailto:triathlon@utexas.edu">triathlon@utexas.edu</a>
-        </p>
-        <p>Follow us on <a href="#">Instagram</a> & <a href="#">Strava</a></p>
-      </div>
-    </footer>
+    <!-- Join -->
+    <section id="join" class="section join container">
+      <h2>Become a Member</h2>
+      <p>
+        Sign up to get event invitations, training tips, and club news straight
+        to your inbox.
+      </p>
+      <a href="#" class="btn-secondary">Register Now</a>
+    </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.4.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Contact / Footer -->
+    <footer id="contact" class="site-footer">
+      <div class="container footer-content">
+        <div>
+          <h3>Contact Us</h3>
+          <p>
+            Email:
+            <a href="mailto:triathlon@utexas.edu">triathlon@utexas.edu</a>
+          </p>
+        </div>
+        <div>
+          <h3>Follow</h3>
+          <p>
+            <a href="https://www.instagram.com/txtriathloncycling/">Instagram</a
+            > | <a href="https://www.strava.com/clubs/texas-cycling">Strava</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">&copy; 2025 UT Triathlon & Cycling Club</div>
+    </footer>
   </body>
 </html>
