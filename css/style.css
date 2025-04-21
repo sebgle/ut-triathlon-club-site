@@ -262,3 +262,92 @@ body {
   color: var(--text);
   font-size: 0.9rem;
 }
+/* Slack Section */
+.slack {
+  text-align: center;
+  background-color: var(
+    --light
+  ); /* or #f9f9f9 if you prefer a light background */
+  padding: 4rem 2rem;
+  border-radius: 12px;
+  margin-bottom: 4rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.03);
+}
+
+.slack-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.slack-content p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+  color: #333;
+}
+
+.btn-slack {
+  display: inline-block;
+  background-color: #4a154b;
+  color: white;
+  font-weight: 600;
+  padding: 0.9rem 2rem;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-slack:hover {
+  background-color: #3c0d3f;
+}
+
+/* Dropdown Styles */
+.nav-links .dropdown {
+  position: relative;
+}
+
+.nav-links .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ddd;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1000;
+  min-width: 150px;
+}
+
+.nav-links .dropdown-menu li a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-links .dropdown-menu li a:hover {
+  background-color: #f4f4f4;
+}
+
+.nav-links .dropdown:hover .dropdown-menu {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-wrapper main {
+  flex: 1;
+}

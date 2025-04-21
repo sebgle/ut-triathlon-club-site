@@ -148,3 +148,57 @@ body {
   border-top: 1px solid #444;
   font-size: 0.9rem;
 }
+
+.slack-button-container {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.slack-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #4a154b; /* Slack purple */
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.slack-button:hover {
+  background-color: #3c0d3f;
+}
+/* Dropdown Styles */
+.nav-links .dropdown {
+  position: relative;
+}
+
+.nav-links .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ddd;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1000;
+  min-width: 150px;
+}
+
+.nav-links .dropdown-menu li a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-links .dropdown-menu li a:hover {
+  background-color: #f4f4f4;
+}
+
+.nav-links .dropdown:hover .dropdown-menu {
+  display: block;
+}

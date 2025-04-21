@@ -12,7 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap"
       rel="stylesheet"
     />
-
+    <link rel="icon" href="assets/favicon.png" type="image/png" />
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -25,10 +25,16 @@
         </a>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#events">Events</a></li>
           <li><a href="#join">Join</a></li>
           <li><a href="#faq">FAQs</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#slack">Connect</a></li>
+          <li class="dropdown">
+            <a>Routes</a>
+            <ul class="dropdown-menu">
+              <li><a href="run-routes.html">Run</a></li>
+              <li><a href="bike-routes.html">Bike</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
     </header>
@@ -60,33 +66,6 @@
       </div>
       <div class="about-image">
         <img src="assets/about.png" alt="Club Activity" />
-      </div>
-    </section>
-
-    <!-- Events -->
-    <section id="events" class="section events container">
-      <h2>Upcoming Events</h2>
-      <div class="cards">
-        <div class="card">
-          <div class="card-date">Apr 30, 2025</div>
-          <h3>Hill‑Climb Ride</h3>
-          <p>Challenge Mount Bonnell with fellow Longhorn cyclists.</p>
-        </div>
-        <div class="card">
-          <div class="card-date">May 10, 2025</div>
-          <h3>Beginner Triathlon Clinic</h3>
-          <p>Learn swim, bike, run transitions at the Rec Center.</p>
-        </div>
-        <div class="card">
-          <div class="card-date">May 22, 2025</div>
-          <h3>Team Time Trial</h3>
-          <p>Race against the clock on Lady Bird Lake loop.</p>
-        </div>
-        <div class="card">
-          <div class="card-date">Jun 5, 2025</div>
-          <h3>Fredericksburg Loop Ride</h3>
-          <p>All‑levels road ride through the Texas Hill Country.</p>
-        </div>
       </div>
     </section>
 
@@ -413,6 +392,24 @@
             us.
           </p>
         </details>
+      </div>
+    </section>
+
+    <!-- Slack Section -->
+    <section id="slack" class="section slack container">
+      <div class="slack-content">
+        <h2>Stay Connected</h2>
+        <p>
+          All of our announcements, group rides, race updates, and team chat
+          happen on Slack. It’s where the club lives day-to-day.
+        </p>
+        <a
+          href="https://join.slack.com/t/utexastriathlon/shared_invite/zt-2pdyjr1wj-iiuZWT2q3IAIsGPmGwSIMQ"
+          target="_blank"
+          class="btn-slack"
+        >
+          Join Our Slack Workspace
+        </a>
       </div>
     </section>
 
